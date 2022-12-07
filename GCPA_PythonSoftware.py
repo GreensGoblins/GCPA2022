@@ -55,7 +55,7 @@ if ot == 'H' or ot =='h':
     movehome = 'y,' + str(start) + ',0' 
     ser.write(str.encode(movehome))
     time.sleep(20)
-    file = open(r'sourpositions.txt', 'w+')
+    file = open(r'sourcepositions.txt', 'w+')
     tkmb.showinfo("Horizontal Position", "Welcome to the horizontal position! You are now in the xy plane. The collimator will move to the home postion. On the positioning apparatus, we have labeled these coordinates for easy understanding of the coordinate system! The x-axis is the direction that uses two stepper motors, the y-axis uses only one. \n \nNow you will enter the x and y position that you would like the collimator to go.")
 
     # Visualization of Coordinate System
